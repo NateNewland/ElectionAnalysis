@@ -1,18 +1,18 @@
 #The Purpose
-In this module we were told Steve wanted help with analyzing the stocks from 2017 and 2018 and tto follow market trends.
-The reason for this code is to show we can make a Macro in Excell that is easy to use and makes sense looking at.
-Something eas to read and to understand play a key roll in how successful someone or a business can be.
+In this exercise we were tasked with making a script to figure out which candidate won this local election. Through python we learned to make a program that can save and return information as well as display the winner and the total number of votes.
+##
+There were 369,711 Votes casted in this election
 
-##Results of Our Findings
+Jefferson had 10.5% or (38,855) votes
+Denver had 82.8%or (306,055) votes
+Arapahoe had 6.7% or (24,801) votes
 
-In the year 2017 the stock market was in a better spot than 2018; With only one stock being in the red the rest saw an overall increase.
-Only two stocksd in 2018 were in the green for the year. This can indicate to us selling at the end of the year in 2017 was the best way
-to insure making a profit.
-<img width="290" alt="2018 Stock Analysis" src="https://user-images.githubusercontent.com/91299736/136447664-a9c49838-ebd9-434b-a29a-cd21e13fae3f.PNG">
-<img width="289" alt="2017 Stock Analysis" src="https://user-images.githubusercontent.com/91299736/136447685-b79df2dc-5197-442f-9609-88dca8d89693.PNG">
+Denver County had the largest turnout for this election
 
+Doane had 3.1% or 11,606 votes
+Diana DeGette had 73.8% (272,892) votes
+Charles Casper Stockham: 23.048543% (85,213)
 
-###Summary
-By refactoring code we can show how effiecent and optimized our program is. However for the average using this information 
-isn't too useful and can make the screen loud and seem distracting. In refactoring this script we throw in a timer.
-This can slow it down and by displaying our time on the program we create a window that seems unnecessary to the average user. 
+Diana DeGette won this election with 73.8% of the popular vote
+### Summary
+We in threoy could change county to state or zip-code for a majoral election. Making such easy changes mean that this code has some great diversity and requires very little effort and time to make these changes.
