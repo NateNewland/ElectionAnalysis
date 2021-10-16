@@ -76,7 +76,7 @@ with open(file_to_load) as election_data:
             county_votes[county_name] = 0
         # 5: Add a vote to that county's vote count.
         #county_votes[county_name] += 1
-            county_votes[county_name] += 1
+        county_votes[county_name] += 1
 
 # Save the results to our text file.
 with open(file_to_save, "w") as txt_file:
@@ -99,15 +99,15 @@ with open(file_to_save, "w") as txt_file:
         # 6c: Calculate the percentage of votes for the county.
         votes_county_percentage = float(votes_county)/ float(total_votes) *100
 
-         # 6d: Print the county results to the terminal.
-        print(votes_county)
          # 6e: Save the county votes to a text file.
         county_results = (
             f"{county_name}:{votes_county_percentage:.1f}%({votes_county:,})\n")
         txt_file.write(county_results)
+        print(county_results)
          # 6f: Write an if statement to determine the winning county and get its vote count.
         if (votes_county > winning_county_count) and (votes_county_percentage > winning_county_percent):
             winning_count_count = votes_county
+            winning_county = county_name
             winning_county_percent = votes_county_percentage
 
     # 7: Print the county with the largest turnout to the terminal.
@@ -119,7 +119,8 @@ with open(file_to_save, "w") as txt_file:
         f"Largest County Turnout: {winning_county}\n"
         f"-----------------------------------------------------\n\n"
     )
-
+    print(winning_county_summary)
+    txt_file.write(winning_county_summary)
     # Save the final candidate vote count to the text file.
     for candidate_name in candidate_votes:
 
@@ -127,7 +128,7 @@ with open(file_to_save, "w") as txt_file:
         votes = candidate_votes.get(candidate_name)
         vote_percentage = float(votes) / float(total_votes) * 100
         candidate_results = (
-            f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+            f"{candidate_name}: {vote_percentage:1f}% ({votes:,})\n\n")
 
         # Print each candidate's voter count and percentage to the
         # terminal.
