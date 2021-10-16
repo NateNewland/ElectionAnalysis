@@ -1,6 +1,8 @@
 # The Purpose
 In this exercise we were tasked with making a script to figure out which candidate won this local election. Through python we learned to make a program that can save and return information as well as display the winner and the total number of votes.
 ## The Data
+<img width="318" alt="My Data Table" src="https://user-images.githubusercontent.com/91299736/137570324-eeca4d65-e2ed-407e-ac71-95ebdc804ea4.PNG">
+
 There were 369,711 Votes casted in this election
 
 Jefferson had 10.5% or (38,855) votes
